@@ -7,10 +7,11 @@
  height: 30vh;
  width: 80%;
  border: 1px solid black;
+ align-items: center;
  
 
  ` 
 
  export const ImgContainer = styled.img`
-width: 30%;
+width: 65%;
  `

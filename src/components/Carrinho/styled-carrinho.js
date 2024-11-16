@@ -4,7 +4,8 @@ export const CarrinhoContainer =styled.div`
 display: flex;
 flex-direction: column;
 border:1px solid black;
-flex-grow: 1;
+flex-grow:3;
+padding: 2%;
 /* height: 40vw;
 width: 20vw; */
 `
@@ -14,6 +15,10 @@ width: auto;
 `
 export const ProdutoContainer = styled.div`
 display: flex;
+padding:2%;
+background-color: khaki;
+margin-bottom: 1rem;
+justify-content:space-around;
 
 `
 

@@ -1,18 +1,24 @@
+import { useState } from "react";
 import { OptionsContainer } from "./styled-header";
 
+export default function Header({ordem ,onChangeOrdem,cart}) {
 
 
-export default function Header () {
-    return(
-        <OptionsContainer>
-        <p>Quantidade de produtos:2</p>
-        <label>Ordenaçao
-        <select>
-            <option>Crescente</option>
-            <option>Decrescente</option>
+
+  return (
+    <OptionsContainer>
+      <p>Quantidade de produtos:{cart.length}</p>
+      <label>
+        Ordenaçao
+        <select value={ordem} onChange={onChangeOrdem}>
+          <option value="cres" >
+            Crescente
+          </option>
+          <option value="decr" >
+            Decrescente
+          </option>
         </select>
-        </label>
-        </OptionsContainer>
-    )
+      </label>
+    </OptionsContainer>
+  );
 }
-
