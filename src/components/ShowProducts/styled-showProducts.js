@@ -5,8 +5,8 @@ display:grid;
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: auto;
 width:100%;
-background-color: aquamarine;
 justify-items: center;
 padding:4% 0;
+row-gap: 1rem;
 
 `

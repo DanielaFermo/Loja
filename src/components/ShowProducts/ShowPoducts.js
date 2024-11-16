@@ -2,7 +2,7 @@ import Card from "../Card/Card";
 import { ShowProductsContainer } from "./styled-showProducts";
 import { productList } from "../../Constants/ProductList";
 
-export default function ShowProducts({ nome, valorMax, valorMin }) {
+export default function ShowProducts({ nome, valorMax, valorMin , ordem , addToCart}) {
   const listaRedenrizada = () => {
     const novaLista = productList
       /*       .filter((produto) => {
@@ -13,7 +13,7 @@ return produto
       }
       }) */
       .filter((produto) => {
-        console.log(valorMax);
+        //console.log(valorMax);
         if (produto.preco <= valorMax) {
           return produto;
         } else if (!valorMax) {
@@ -22,7 +22,7 @@ return produto
         }
       })
       .filter((produto) => {
-        console.log(valorMin);
+        //console.log(valorMin);
         if (produto.preco >= valorMin) {
           return produto;
         } else if (!valorMin) {
@@ -32,9 +32,25 @@ return produto
       .filter((produto) => {
         return produto.nome.includes(nome);
       })
+   .sort((a,b)=>{
+        switch(ordem){
+          case "cres":
+            if(a.nome < b.nome){
+              return-1
+            }break
+            case "decr":
+              if(a.nome > b.nome){
+                return -1
+              }
+              default:
+                return 0 
+        }
+
+      })
+      
       .map((produto, indice) => {
-        console.log("map", produto);
-        return <Card key={indice} produto={produto} />;
+        //console.log("map", produto);
+        return <Card key={indice} produto={produto} addToCart={addToCart} />;
       });
     return novaLista;
   };

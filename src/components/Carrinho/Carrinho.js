@@ -1,20 +1,21 @@
+import CardCarrinho from "../CardCarrinho/CardCarrinho"
+
 import { CarrinhoContainer, ButtonRemove, ProdutoContainer } from "./styled-carrinho";
 
-export default function Carrinho() {
+export default function Carrinho({cart , removeProduct ,valorTotal} ) {
+
   return (
     <CarrinhoContainer>
       <p>Carrinho:</p>
-      <ProdutoContainer>
-        <p>Produto 1</p>
-        <ButtonRemove>Remover</ButtonRemove>
-      </ProdutoContainer>
-      <ProdutoContainer>
-        <p>Produto 2</p>
-        <ButtonRemove>Remover</ButtonRemove>
-      </ProdutoContainer>      <ProdutoContainer>
-        <p>Produto 3</p>
-        <ButtonRemove>Remover</ButtonRemove>
-      </ProdutoContainer>
+      <p>Total:{valorTotal()} </p>
+      {
+        cart.map((product,indice)=>{
+          return<CardCarrinho product={product} removeProduct={removeProduct} key={indice}  ></CardCarrinho>
+        })
+      }
+
+
+
     </CarrinhoContainer>
   );
 }
