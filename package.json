@@ -1,7 +1,7 @@
 {
   "name": "loja",
   "version": "0.1.0",
-  "homepage": "https://{DanielaFermo}.github.io/{loja}",
+  "homepage": "https://DanielaFermo.github.io/Loja",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
