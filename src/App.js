@@ -26,6 +26,7 @@ const MainContainer = styled.div`
   flex-grow: 3;
   max-width: 65vw;
   height: 100vh;
+  
 `;
 
 function App() {

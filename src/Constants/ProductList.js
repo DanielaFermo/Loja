@@ -17,26 +17,26 @@ export const productList = [
   {
     id:3,
     image:
-      "https://ae01.alicdn.com/kf/S86385a0b878f4a7aa1e886ad867a8450F/Bolsa-atravessada-de-cor-pura-feminina-bolsa-pequena-de-meia-idade-com-al-a-nica-bolsa.jpg",
+      "https://media.vogue.co.uk/photos/66ffeb6d4b0fca7d2307abdf/3:4/w_748%2Cc_limit/EC-Vogue%2520UK-041024-Bags-Prada%2520-%2520vinted%2520-%2520.png",
     nome: "Saco Atravessado code marron",
     preco: 24,
   },
   {
     id:4,
     image:
-      "https://ae01.alicdn.com/kf/S01b5e3e4877a43db8408da4fa4458f8dx.jpg_960x960.jpg",
+      "https://jemmabag.com/cdn/shop/files/orangebrown2_eee4a250-8674-4d23-a331-05206e4a1a86_360x.png?v=1728809396",
     nome: "Saco Couro Preto",
     preco: 200.19,
   },
   {id:5,
     image:
-      "https://cdn.dooca.store/117/products/bolsa-feminina-rosa_620x620+fill_ffffff.jpg?v=1626967527&webp=0",
+      "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46975_PM2_Front%20view.jpg",
     nome: "Bolsa rosinha Legitimo",
     preco: 90,
   },
   {
     id:6,
-    image:"https://m.media-amazon.com/images/I/41bzfd4OuGL._AC_.jpg"
+    image:"https://cdn.media.amplience.net/i/tom_ford/L1765-LCL395X_1B087_APPENDGRID"
       ,
     nome: "Saco Couro Grande Madrid",
     preco: 374,

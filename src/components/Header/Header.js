@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { OptionsContainer } from "./styled-header";
+import { OptionsContainer, QuantidadeContainer } from "./styled-header";
 
 export default function Header({ordem ,onChangeOrdem,cart}) {
 
@@ -7,7 +7,10 @@ export default function Header({ordem ,onChangeOrdem,cart}) {
 
   return (
     <OptionsContainer>
-      <p>Quantidade de produtos:{cart.length}</p>
+      <QuantidadeContainer>
+      <img src="https://png.pngtree.com/png-vector/20190725/ourmid/pngtree-vector-shopping-bag-icon-png-image_1577291.jpg"></img>
+      {cart.length}
+      </QuantidadeContainer>
       <label>
         Ordenaçao
         <select value={ordem} onChange={onChangeOrdem}>
