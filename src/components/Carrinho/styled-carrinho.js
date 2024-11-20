@@ -8,6 +8,7 @@ flex-grow:3;
 padding: 2%;
 /* height: 40vw;
 width: 20vw; */
+
 `
 export const ButtonRemove = styled.button`
 height: auto;
@@ -21,4 +22,5 @@ margin-bottom: 1rem;
 justify-content:space-around;
 
 `
+
 

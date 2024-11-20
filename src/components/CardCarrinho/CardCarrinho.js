@@ -1,3 +1,4 @@
+import { Button } from "./styled-CardCarrinho";
 import {CardContainer, ValorContainer} from "./styled-CardCarrinho"
 
 export default function CardCarrinho({ product ,removeProduct }) {
@@ -7,7 +8,7 @@ export default function CardCarrinho({ product ,removeProduct }) {
 <ValorContainer>
       <p>Preço: ${product.preco}</p>
       <p>Qtd: {product.quantidade}</p>
-      <button onClick={()=>removeProduct(product)}>X</button>
+      <Button onClick={()=>removeProduct(product)}>X</Button>
 </ValorContainer>
       
     </CardContainer>

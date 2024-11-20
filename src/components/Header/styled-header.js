@@ -8,3 +8,6 @@ justify-content: space-between;
 padding: 2%;
 
 `
+export const QuantidadeContainer = styled.div`
+display:flex
+`
